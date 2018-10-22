@@ -11,7 +11,7 @@ attr_accessor :author
   
   def create
     @author = Author.new
-    if @author.update(author_params)
+    if @author.create(author_params)
       redirect_to author_path(@author)
     else
       render :new
