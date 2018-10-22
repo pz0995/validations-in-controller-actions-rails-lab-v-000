@@ -2,8 +2,8 @@ class PostsController < ApplicationController
   before_action :set_post!, only: [:show, :edit, :update]
 
 attr_accessor :post
+
   def show
-          # render :show
   end
 
   def edit
@@ -18,7 +18,6 @@ attr_accessor :post
     render :edit
   end
 end
-
 
   private
 
